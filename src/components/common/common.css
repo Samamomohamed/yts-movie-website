@@ -1,0 +1,112 @@
+/* Common Components Styles */
+
+/* Loading Component */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  gap: 16px;
+}
+
+.loading-message {
+  color: #bdbdbd;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Error Message Component */
+.error-container {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.error-alert {
+  border-radius: 8px;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+.error-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.error-message {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.error-retry-button {
+  color: inherit;
+  font-size: 0.8rem;
+  text-transform: none;
+  border-radius: 4px;
+  padding: 4px 12px;
+  transition: all 0.2s ease;
+}
+
+.error-retry-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Pagination Component */
+.pagination-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.pagination-info {
+  color: #bdbdbd;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-button {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.pagination-button:hover {
+  background-color: rgba(0, 230, 0, 0.1);
+}
+
+.pagination-button.active {
+  background-color: #00e600;
+  color: #000;
+}
+
+.pagination-button.active:hover {
+  background-color: #00ff00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .loading-container {
+    min-height: 150px;
+    gap: 12px;
+  }
+
+  .pagination-container {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    gap: 12px;
+  }
+
+  .pagination-info {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

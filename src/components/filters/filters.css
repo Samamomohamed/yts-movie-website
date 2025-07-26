@@ -1,0 +1,59 @@
+/* Filters Components Styles */
+
+.filter-form-control {
+  min-width: 120px;
+}
+
+.filter-form-control.order {
+  min-width: 100px;
+}
+
+.filter-select {
+  background: #232323;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: border-color 0.2s;
+}
+
+.filter-select:focus {
+  border-color: #00e600;
+}
+
+.filter-label {
+  color: #bdbdbd;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.filter-menu-item {
+  color: #bdbdbd;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.filter-menu-item:hover {
+  background: rgba(0, 230, 0, 0.08);
+  color: #00e600;
+}
+
+.filter-box {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .filter-form-control {
+    min-width: 90px;
+  }
+  .filter-form-control.order {
+    min-width: 70px;
+  }
+  .filter-box {
+    gap: 8px;
+  }
+}

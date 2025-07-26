@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Layout } from "./components/layout/Layout";
+import { HomePage } from "./pages/HomePage";
+import { MovieDetailsPage } from "./pages/MovieDetailsPage";
+import { BrowseMoviesPage, CategoriesPage } from "./pages/BrowseMoviesPage";
+import { TrendingPage } from "./pages/TrendingPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/browse" element={<BrowseMoviesPage />} />
+          <Route path="/trending" element={<TrendingPage />} />
+          <Route path="/movie/:id" element={<MovieDetailsPage />} />
+          <Route path="/categories" element={<CategoriesPage />} />
+          <Route path="/404" element={<NotFoundPage />} />
+          {/* Redirect old paths */}
+          <Route path="/movies" element={<BrowseMoviesPage />} />
+          <Route path="/search" element={<BrowseMoviesPage />} />
+          {/* Catch all route for 404 */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

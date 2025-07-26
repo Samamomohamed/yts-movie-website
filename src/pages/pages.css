@@ -1,0 +1,239 @@
+/* Pages Components Styles */
+
+/* Browse Movies Page */
+.browse-header {
+  margin-bottom: 32px;
+}
+
+.browse-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.browse-description {
+  color: #bdbdbd;
+}
+
+.browse-filters-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.browse-filters-button {
+  border-color: #00e600;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  min-width: 120px;
+  height: 40px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.browse-filters-button:hover {
+  border-color: #00e600;
+  background: rgba(0, 230, 0, 0.07);
+}
+
+.browse-clear-filters-button {
+  border-color: #888;
+  color: #fff;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  min-width: 120px;
+  height: 40px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.browse-clear-filters-button:hover {
+  border-color: #888;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Home Page */
+.hero-section {
+  background: #1a1a1a;
+  padding-bottom: 40px;
+  padding-top: 0;
+  border-bottom: none;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.hero-description {
+  color: #bdbdbd;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 32px auto;
+  opacity: 0.9;
+}
+
+.hero-important {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  background: rgba(0, 191, 255, 0.08);
+  border: 1px solid rgba(0, 191, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 12px rgba(0, 191, 255, 0.08);
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.hero-important-title {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.hero-important-text {
+  font-size: 0.8rem;
+}
+
+/* Not Found Page */
+.notfound-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.notfound-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.notfound-404 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #00e600;
+  line-height: 0.9;
+  margin-bottom: 24px;
+  opacity: 0.9;
+}
+
+.notfound-title {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+}
+
+.notfound-description {
+  color: #bdbdbd;
+  margin-bottom: 40px;
+  max-width: 450px;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.8;
+}
+
+.notfound-actions {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.notfound-home-button {
+  background: #00e600;
+  color: #000;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: 16px;
+  text-transform: none;
+  box-shadow: 0 2px 8px rgba(0, 230, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.notfound-home-button:hover {
+  background: #00ff00;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 230, 0, 0.3);
+}
+
+.notfound-back-button {
+  border-color: #666;
+  color: #bdbdbd;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 12px 24px;
+  border-radius: 16px;
+  text-transform: none;
+  transition: all 0.2s ease;
+}
+
+.notfound-back-button:hover {
+  border-color: #00e600;
+  color: #00e600;
+  background: rgba(0, 230, 0, 0.05);
+}
+
+/* Trending Page */
+.trending-header {
+  margin-bottom: 32px;
+}
+
+.trending-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.trending-description {
+  color: #bdbdbd;
+}
+
+.trending-tabs-paper {
+  margin-bottom: 32px;
+}
+
+.trending-tabs {
+  border-bottom: 1px solid #333;
+}
+
+/* Movie Details Page */
+.movie-details-nav-container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.movie-details-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.movie-details-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.movie-details-breadcrumb-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
