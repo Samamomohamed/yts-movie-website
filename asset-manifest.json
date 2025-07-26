@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yts-movie-website/static/css/main.8f21784d.css",
+    "main.js": "/yts-movie-website/static/js/main.cce694b2.js",
+    "static/js/453.1ac64494.chunk.js": "/yts-movie-website/static/js/453.1ac64494.chunk.js",
+    "index.html": "/yts-movie-website/index.html",
+    "main.8f21784d.css.map": "/yts-movie-website/static/css/main.8f21784d.css.map",
+    "main.cce694b2.js.map": "/yts-movie-website/static/js/main.cce694b2.js.map",
+    "453.1ac64494.chunk.js.map": "/yts-movie-website/static/js/453.1ac64494.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f21784d.css",
+    "static/js/main.cce694b2.js"
+  ]
+}
